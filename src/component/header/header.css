@@ -1,0 +1,27 @@
+header {
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+header .navbar-brand {
+  font-size: 28px;
+}
+
+header a {
+  font-size: 16px;
+}
+
+header a:hover {
+  color: red;
+}
+header nav {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav li {
+  margin-left: 15px;
+}

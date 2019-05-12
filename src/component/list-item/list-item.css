@@ -1,0 +1,14 @@
+.list-items {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.list-items .item-list{
+  cursor: pointer;
+}
+
+.list-items .item-list:hover {
+  background: #444555;
+}

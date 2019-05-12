@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: black;
+  color: #ffffff;
+}
+
+.container {
+  height: 100%;
+}
+
+.border-top {
+  border-top: 1px solid lightgrey;
+}
+
+.mainApp {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

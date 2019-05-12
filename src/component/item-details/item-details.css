@@ -1,0 +1,21 @@
+.item-details {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.item-details .details-img {
+  width: 30%;
+  height: 30%;
+  margin-right: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.item-details .body-details {
+  width: 100%;
+  padding: 20px 20px 20px 5px;
+}
