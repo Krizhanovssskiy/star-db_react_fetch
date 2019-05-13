@@ -13,6 +13,7 @@ const PlanetView = ({ planet }) => {
     <Fragment>
       <img src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`}
            className=' planet-images'
+           alt='img'
       />
       <div>
         <h4>{name}</h4>

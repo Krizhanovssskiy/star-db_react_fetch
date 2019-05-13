@@ -3,21 +3,28 @@ import './app.css'
 
 import Header from '../header';
 import RandomPlanet from '../random-planet';
-import ListItems from '../list-item';
 import ItemDetails, { Record }  from '../item-details';
 import SwapiServices from '../../services/swapi-services';
 import Row from '../row';
 import ErrorBoundry from '../error-boundry';
+import {
+  PeopleList,
+  PlanetList,
+  StarshipList,
+  PeopleDetails,
+  PlanetDetails,
+  StarshipDetails
+} from '../sw-components';
+
 export default class App extends Component {
 
   state = {
     planetId: 2,
     personId: 1,
-    starshipId: 2,
+    starshipId: 5,
   };
 
   swapiService = new SwapiServices();
-
 
 
   onSelectedPlanet = (id) => {
@@ -42,9 +49,7 @@ export default class App extends Component {
       getStarship,
       getPlanet,
       getPerson,
-      getAllPlanets,
-      getAllPeople,
-      getAllStarships,
+
       getUrlImgPerson,
       getUrlImgPlanet,
       getUrlImgStarship,
@@ -52,12 +57,8 @@ export default class App extends Component {
 
     const listAllPlanet = (
       <ErrorBoundry>
-        <ListItems
-          getData={getAllPlanets}
+        <PlanetList
           onItemSelected={this.onSelectedPlanet}
-          renderItem={(i) => {
-            return`${ i.name }. Diametr- ${i.diameter}km.`}
-          }
         />
       </ErrorBoundry>
     );
@@ -86,12 +87,8 @@ export default class App extends Component {
 
     const listAllPeople = (
       <ErrorBoundry>
-        <ListItems
-          getData={getAllPeople}
+        <PeopleList
           onItemSelected={this.onSelectedPerson}
-          renderItem={(i) => {
-            return`${ i.name }. Gender- ${i.gender}.`}
-          }
         />
       </ErrorBoundry>
     );
@@ -121,12 +118,8 @@ export default class App extends Component {
 
     const listAllStarship = (
       <ErrorBoundry>
-        <ListItems
-          getData={getAllStarships}
+        <StarshipList
           onItemSelected={this.onSelectedStarship}
-          renderItem={(i) => {
-            return`${ i.name }. Length - ${i.length}.`}
-          }
         />
       </ErrorBoundry>
     );
